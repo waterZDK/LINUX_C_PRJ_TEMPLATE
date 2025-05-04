@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "GDB Remote Debugging",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/water/git_prj/LINUX_C_PRJ_TEMPLATE/build/LINUX_C_PRJ_TEMPLATE/LINUX_C_PRJ_TEMPLATE", // 根据实际修改：本地可执行文件绝对路径
+            "miDebuggerServerAddress": "192.168.10.102:2331", // 根据实际修改：GDB Server 地址
+            "miDebuggerPath": "/opt/fsl-imx-x11/4.1.15-2.1.0/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gdb", // gdb调试程序所在路径，注意要是开发板程序交叉编译工具链里的gdb
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "setupCommands": [
+                {
+                    "description": "Set breakpoint at main",
+                    "text": "break main"
+                }
+            ],
+            "preLaunchTask": "",
+            "miDebuggerArgs": "",
+            "externalConsole": false
+        }
+    ]
+}
