@@ -22,7 +22,7 @@ endif()
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -Werror")
 set(CMAKE_C_FLAGS_RELEASE "-Os")
-set(CMAKE_C_FLAGS_DEBUG "-O0")
+set(CMAKE_C_FLAGS_DEBUG "-g -O0")
 
 # 配置生成compile_commands.json，用于clangd插件（可选）
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
