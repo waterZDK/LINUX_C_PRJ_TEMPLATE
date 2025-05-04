@@ -1,0 +1,66 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Debug Firmware",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": [
+                "-b", "Debug",
+                "-t", "./toolchain/arm-linux.cmake",
+                "build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "使用指定工具链执行构建，构建调试用固件"
+        },
+        {
+            "label": "Build Release Firmware",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": [
+                "-b", "Release",
+                "-t", "./toolchain/arm-linux.cmake",
+                "build"
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": [],
+            "detail": "使用指定工具链执行构建，构建发布用固件"
+        },
+        {
+            "label": "Build Debug Firmware (Rebuild)",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": [
+                "-b", "Debug",
+                "-t", "./toolchain/arm-linux.cmake",
+                "rebuild"
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": [],
+            "detail": "使用指定工具链执行全新构建，构建调试用固件"
+        },
+        {
+            "label": "Build Release Firmware (Rebuild)",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": [
+                "-b", "Release",
+                "-t", "./toolchain/arm-linux.cmake",
+                "rebuild"
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": [],
+            "detail": "使用指定工具链执行全新构建，构建发布用固件"
+        }
+    ]
+}

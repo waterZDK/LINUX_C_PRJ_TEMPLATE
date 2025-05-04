@@ -3,6 +3,9 @@
 ├── build.sh                    # 自动化构建脚本
 ├── CMakeLists.txt              # 顶层CMakeLists.txt
 ├── README.md                   # 工程说明
+├── .vscode                     # VSCode配置文件
+│   ├── launch.json             # 调试配置（需要根据实际情况修改）
+│   └── tasks.json              # 编译配置（需要根据实际情况修改）
 ├── config                      # 程序配置文件，编译完成后这里面的所有文件会被移动到可执行文件所在目录
 │   └── example_config.ini      # 示例配置文件
 ├── src                         # 源代码目录
