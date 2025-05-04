@@ -1,15 +1,3 @@
-/**
-  * @file submodule_a.c
-  * @author XXX
-  * @brief sub module a example source file
-  * 
-  * All Contents@CopyRight Of XXX XXXX Co., Ltd.
-  * 
-  * Date            Author          Description
-  * ----------      ----------      -----------------------------------------
-  * 2025-05-03      zdk             Initial created
-  */
-
 /* Includes ------------------------------------------------------------------*/
 
 #include "submodule_a.h"
@@ -41,4 +29,4 @@ void submodule_a_output(void)
   * @}
   */ 
 
-/*********************** (C) COPYRIGHT XXX XXXX Co., Ltd. *****END OF FILE****/
+/****************************END OF FILE****/

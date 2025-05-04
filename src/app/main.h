@@ -1,15 +1,3 @@
-/**
-  * @file main.h
-  * @author XXX
-  * @brief application main header file
-  * 
-  * All Contents@CopyRight Of XXX XXXXXX Co., Ltd.
-  * 
-  * Date            Author          Description
-  * ----------      ----------      -----------------------------------------
-  * 2025-05-03      zdk             Initial created
-  */
-
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef _MAIN_H_
 #define _MAIN_H_
@@ -41,4 +29,4 @@ extern "C" {
 
 #endif /* #ifndef _MAIN_H_ */
 
-/*********************** (C) COPYRIGHT XXX XXXXs Co., Ltd. *****END OF FILE****/
+/****************************END OF FILE****/

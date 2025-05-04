@@ -1,15 +1,3 @@
-/**
-  * @file submodule_b.h
-  * @author XXXX
-  * @brief sub module b example header file
-  * 
-  * All Contents@CopyRight Of XXX XXXX Co., Ltd.
-  * 
-  * Date            Author          Description
-  * ----------      ----------      -----------------------------------------
-  * 2025-05-03      zdk             Initial created
-  */
-
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef _SUBMODULE_B_H_
 #define _SUBMODULE_B_H_
@@ -43,4 +31,4 @@ void submodule_b_output(void);
 
 #endif /* #ifndef _SUBMODULE_B_H_ */
 
-/*********************** (C) COPYRIGHT XXX XXXX Co., Ltd. *****END OF FILE****/
+/****************************END OF FILE****/

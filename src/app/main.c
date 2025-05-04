@@ -1,15 +1,3 @@
-/**
-  * @file main.c
-  * @author XXX
-  * @brief application main source file
-  * 
-  * All Contents@CopyRight Of EVE Energy Co., Ltd.
-  * 
-  * Date            Author          Description
-  * ----------      ----------      -----------------------------------------
-  * 2025-05-03      zdk             Initial created
-  */
-
 /* Includes ------------------------------------------------------------------*/
 
 #include "main.h"
@@ -50,4 +38,4 @@ int main(void)
   * @}
   */ 
 
-/*********************** (C) COPYRIGHT XXX XXXX Co., Ltd. *****END OF FILE****/
+/****************************END OF FILE****/
