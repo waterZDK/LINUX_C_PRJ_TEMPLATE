@@ -3,6 +3,8 @@
 ├── build.sh                    # 自动化构建脚本
 ├── CMakeLists.txt              # 顶层CMakeLists.txt
 ├── README.md                   # 工程说明
+├── config                      # 程序配置文件，编译完成后这里面的所有文件会被移动到build/output
+│   └── example_config.ini      # 示例配置文件
 ├── src                         # 源代码目录
 │   ├── app                     # 主函数
 │   │   ├── CMakeLists.txt      # 可执行文件构建CMakeLists.txt
