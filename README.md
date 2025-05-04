@@ -32,7 +32,7 @@
 
 # 构建说明
 ## 使用build.sh脚本（推荐）
-常用脚本指令示例：
+**使用前先使用chmod给脚本添加可执行权限**，如下为常用脚本指令示例：
 ```bash
 # 使用指定的工具链执行全新构建，构建调试用固件
 ./build.sh -b Debug -t ./toolchain/arm-linux.cmake rebuild
