@@ -26,6 +26,7 @@
 
 int main(void)
 {
+    setvbuf(stdout, NULL, _IOLBF, 0);
     printf("Hello world!\n");
     submodule_a_output();
     submodule_b_output();
