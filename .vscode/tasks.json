@@ -7,7 +7,7 @@
             "command": "./build.sh",
             "args": [
                 "-b", "Debug",
-                "-t", "./toolchain/arm-linux.cmake",
+                "-t", "./toolchain/arm-linux.cmake", // 按实际情况修改使用的工具链配置
                 "build"
             ],
             "group": {
@@ -23,7 +23,7 @@
             "command": "./build.sh",
             "args": [
                 "-b", "Release",
-                "-t", "./toolchain/arm-linux.cmake",
+                "-t", "./toolchain/arm-linux.cmake", // 按实际情况修改使用的工具链配置
                 "build"
             ],
             "group": {
@@ -38,7 +38,7 @@
             "command": "./build.sh",
             "args": [
                 "-b", "Debug",
-                "-t", "./toolchain/arm-linux.cmake",
+                "-t", "./toolchain/arm-linux.cmake", // 按实际情况修改使用的工具链配置
                 "rebuild"
             ],
             "group": {
@@ -53,7 +53,7 @@
             "command": "./build.sh",
             "args": [
                 "-b", "Release",
-                "-t", "./toolchain/arm-linux.cmake",
+                "-t", "./toolchain/arm-linux.cmake", // 按实际情况修改使用的工具链配置
                 "rebuild"
             ],
             "group": {
@@ -61,6 +61,38 @@
             },
             "problemMatcher": [],
             "detail": "使用指定工具链执行全新构建，构建发布用固件"
+        },
+        {
+            "label": "Transfer Files to Dev Board (SCP)",
+            "type": "shell",
+            "command": "scp",
+            "args": [
+                "-oHostKeyAlgorithms=+ssh-rsa",
+                "-O",
+                "-r",
+                "build/LINUX_C_PRJ_TEMPLATE", // 按实际情况修改编译出的执行文件所在文件夹名称
+                "root@192.168.10.102:/home/root/" // 按实际情况修改ssh登陆用的账户+IP地址，以及程序要发送到的目录
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": [],
+            "detail": "通过 SCP 将文件传输到开发板"
+        },
+        {
+            "label": "Start GDB Server on Dev Board",
+            "type": "shell",
+            "command": "ssh",
+            "args": [
+                "-oHostKeyAlgorithms=+ssh-rsa",
+                "root@192.168.10.102", // 按实际情况修改ssh登陆用的账户+IP地址
+                "\"gdbserver :2331 ~/LINUX_C_PRJ_TEMPLATE/LINUX_C_PRJ_TEMPLATE\"" // 按实际情况修改程序所在位置
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": [],
+            "detail": "启动 GDB 调试服务器"
         }
     ]
 }
